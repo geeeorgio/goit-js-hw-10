@@ -2,15 +2,16 @@
   position: relative;
   display: inline-block;
   padding: 4px 8px;
-  margin-top: 32px;
+  margin: 10px;
   border: 1px solid;
   border-radius: 8px;
 }
+
 .back-link::before {
   content: '';
   position: absolute;
-  top: 50%;
-  left: 0;
+  top: 33%;
+  left: -20px;
   width: 16px;
   height: 16px;
 
@@ -23,6 +24,7 @@
   animation: slide 500ms linear infinite alternate-reverse both;
   animation-play-state: paused;
 }
+
 .back-link:hover::before {
   opacity: 1;
   animation-play-state: running;

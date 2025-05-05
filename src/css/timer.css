@@ -1,0 +1,105 @@
+.flatpickr {
+    max-width: 355px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-bottom: 32px;
+
+    & button {
+        border-radius: 8px;
+        padding: 8px 16px;
+        border: transparent;
+        background-color: #4e75ff;
+        transition: background-color 333ms ease-in-out;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #fff;
+        width: 26%;
+
+        &:hover {
+            background-color: #6c8cff;
+        }
+
+        &.disabled {
+            background-color: #cfcfcf;
+            color: #989898;
+        }
+    }
+}
+
+#datetime-picker {
+    width: 100%;
+    border-radius: 4px;
+    padding-left: 16px;
+    border: 1px solid #808080;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    transition: border 333ms ease-in-out;
+
+    &:hover {
+        border: 1px solid #000;
+    }
+
+    &:focus {
+        border: 1px solid #4e75ff;
+        outline: none;
+    }
+
+    &:disabled {
+        border: 1px solid #fafafa;
+    }
+}
+
+.timer {
+    max-width: 355px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 24px;
+
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.value {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+}
+
+.label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.flatpickr-calendar .flatpickr-day {
+    &.selected {
+        background: #4e75ff;
+    }
+
+    &.today {
+        border: 1px solid #4e75ff;
+    }
+
+    &:hover {
+        background: #c1c1c1;
+        border: none;
+    }
+}
