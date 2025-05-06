@@ -1,4 +1,4 @@
-.flatpickr {
+.js-flatpickr {
     max-width: 355px;
     display: flex;
     flex-direction: row;
@@ -9,23 +9,23 @@
         border-radius: 8px;
         padding: 8px 16px;
         border: transparent;
-        background-color: #4e75ff;
-        transition: background-color 333ms ease-in-out;
+        background-color: #cfcfcf;
+        transition: background-color 111ms ease-in-out;
 
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.04em;
-        color: #fff;
+        color: #989898;
         width: 26%;
 
-        &:hover {
-            background-color: #6c8cff;
-        }
+        &.active {
+            background-color: #4e75ff;
+            color: #fff;
 
-        &.disabled {
-            background-color: #cfcfcf;
-            color: #989898;
+            &:hover {
+                background-color: #6c8cff;
+            }
         }
     }
 }
